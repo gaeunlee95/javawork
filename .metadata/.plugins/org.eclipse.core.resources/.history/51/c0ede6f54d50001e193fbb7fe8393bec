@@ -1,0 +1,9 @@
+package classes.methods;
+
+public class Hello {
+
+	//sayHello() 메서드 정의
+	public void sayHello() {
+		System.out.println("안녕");
+	}
+}

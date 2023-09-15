@@ -1,0 +1,18 @@
+package reference.subjects;
+
+public class Student {
+	//필드
+	int studentID; 		//학번
+	String studentName; //이름
+	Subjects korean;	//국어 과목(참조)
+	
+	//생성자
+	
+	public Student(int studentID, String studentName) {
+		this.studentID = studentID;
+		this.studentName = studentName;
+	}
+	
+	
+
+}

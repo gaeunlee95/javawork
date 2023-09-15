@@ -1,0 +1,10 @@
+package reference.subjects;
+
+public class StudentName {
+
+	public static void main(String[] args) {
+		Student std1 = new Student(101, "홍길동");
+		
+	}
+
+}

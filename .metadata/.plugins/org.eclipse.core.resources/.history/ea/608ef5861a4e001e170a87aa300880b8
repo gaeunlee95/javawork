@@ -1,0 +1,21 @@
+package scores;
+
+import java.util.Scanner;
+
+public class CalcScoreTest {
+
+	public static void main(String[] args) {
+		// 성적 처리 프로그램
+		Scanner sc = new Scanner(System.in);
+		boolean sw = true; //상태 변수
+		
+		while(sw) {
+			
+			
+		}
+		sc.close();
+		
+		
+	}
+
+}

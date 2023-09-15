@@ -1,0 +1,5 @@
+package inheritance.airplane;
+
+public class AirPlane {
+
+}

@@ -1,0 +1,29 @@
+package methods;
+
+public class ReturnMethodTest {
+	
+	// return 이 있는 함수(반환 자료형 o) - int, String o 
+	// 호출한 곳으로 반환값을 보냄
+
+	public static void main(String[] args) {
+		//더하기 함수 호출
+		int result = add(10, 20);
+		System.out.println(result);
+
+	}
+	
+	public static int add(int a, int b) {
+		return a + b;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

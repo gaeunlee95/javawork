@@ -1,0 +1,18 @@
+package customers;
+
+public class CustomerTest2 {
+
+	public static void main(String[] args) {
+		// 부모형으로 객체 생성 - 자동 형변환
+		// 매개변수 있는 생성자 사용
+		Customer lee = new Customer(1001, "이순신");
+		
+		int price = 10000;
+		int cost = lee.calcPrice(price);
+		
+		System.out.println(lee.showCustomerInfo());
+		
+		
+	}
+
+}

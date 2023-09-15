@@ -1,0 +1,12 @@
+package algorithm;
+
+public class RankTest {
+
+	public static void main(String[] args) {
+		// 순위 정하기
+		int[] score = {70, 90, 60, 50, 80};
+		
+		
+	}
+
+}

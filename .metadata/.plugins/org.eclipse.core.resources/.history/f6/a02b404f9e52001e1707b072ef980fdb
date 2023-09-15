@@ -1,0 +1,20 @@
+package kr.or.iei.run;
+
+public class UserTest2 {
+
+	public static void main(String[] args) {
+		//매개변수가 있는 생성자로 객체 user1 생성
+		
+		//출력
+		
+		//크기가 3인 users 배열 생성
+		
+		//배열을 각 user1,..에 저장
+		
+		//users[0] 출려
+		
+		//전체 출력
+		
+	}
+
+}

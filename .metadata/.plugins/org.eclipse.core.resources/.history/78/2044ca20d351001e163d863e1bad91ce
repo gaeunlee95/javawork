@@ -1,0 +1,14 @@
+package protectedex.pack2;
+
+import protectedex.pack1.A;
+
+//A를 D가 상속 받음
+//다른 패키지여도 상속 관계는 사용 가능
+public class D extends A {
+
+	public D() {
+		//super(); //생략가능 (매개변수 없음)
+		this.field = "yes";
+		this.method();
+	}
+}

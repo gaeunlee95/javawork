@@ -1,0 +1,5 @@
+package kr.or.iei.run.model.vo;
+
+public class User {
+
+}

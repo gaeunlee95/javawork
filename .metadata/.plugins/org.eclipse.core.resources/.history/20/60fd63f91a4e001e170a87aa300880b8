@@ -1,0 +1,25 @@
+package scores;
+
+import java.util.Scanner;
+
+public class CalcScoreTest {
+
+	public static void main(String[] args) {
+		// 성적 처리 프로그램
+		Scanner sc = new Scanner(System.in);
+		boolean sw = true; //상태 변수
+		
+		while(sw) {
+			System.out.println("============================================");
+			System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
+			System.out.println("============================================");
+			
+			//문자를 숫자로 변환 (String, Integer - int)
+			int menu = Integer.parseInt(sc.nextLine());
+		}
+		sc.close();
+		
+		
+	}
+
+}

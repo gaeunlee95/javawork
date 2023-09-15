@@ -1,0 +1,8 @@
+package overriding.shop;
+
+public class HeadShop {
+	
+	public void 된장찌개() {
+		System.out.println("된장찌개: 6,000원");
+	}
+}

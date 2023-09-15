@@ -1,0 +1,20 @@
+package kr.or.iei.run;
+
+import kr.or.iei.model.User;
+
+public class UserTest2 {
+
+	public static void main(String[] args) {
+		//매개변수가 있는 생성자로 user1 인스턴스 생성
+		//==set
+		User user1 = new User("sky789", "12345", "이가은");
+		
+		System.out.println("아이디: " + user1.getId());
+		System.out.println("비밀번호: " + user1.getPwd());
+		System.out.println("이름: " + user1.getName());
+		
+		System.out.printf(null, args)
+		
+	}
+
+}

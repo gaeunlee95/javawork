@@ -1,0 +1,17 @@
+package classes.constructor;
+
+//참조 자료형 - Person 클래스 정의
+public class Person {
+	String name;  //사람의 이름
+	float height; //키
+	float weight; //몸무게
+
+	//기본 생성자
+	public Person() {}
+
+	//메서드
+	public void showPersonInfo() {
+		System.out.printf("이름: %s, 키: %f, 몸무게: %f ", 
+				name, height, weight);
+	}
+}

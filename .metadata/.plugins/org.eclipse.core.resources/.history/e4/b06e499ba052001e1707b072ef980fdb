@@ -1,0 +1,16 @@
+package arrays;
+
+public class ArrayGugudan {
+
+	public static void main(String[] args) {
+		// 구구단 3단
+		int dan = 3;
+		
+		for(int i=0; i<10; i++) {
+			System.out.println(dan + " x " + i + " = " + dan * i);
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package transport;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//사람 객체 생성
+		Person p1 = new Person("이강인", 10000);
+		Person p2 = new Person("우영우", 20000);
+		
+		//버스 객체 생성
+		Bus bus100 = new Bus(100);
+		
+		p1.takeBus(bus100);
+		
+		p1.showPersonInfo();
+		bus100.showBusInfo();
+		
+		
+		
+		
+		
+	}
+
+}

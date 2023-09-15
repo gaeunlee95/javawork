@@ -1,0 +1,10 @@
+package inheritance.statement;
+
+public class SaleStatement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

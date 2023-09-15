@@ -1,0 +1,10 @@
+package reference.subjects;
+
+public class StudentName {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

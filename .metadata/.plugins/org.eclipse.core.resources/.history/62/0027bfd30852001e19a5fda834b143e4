@@ -1,0 +1,9 @@
+package banking.array;
+
+public class Account {
+	//필드
+	private String ano;
+	private String owner;
+	private int balance;
+
+}

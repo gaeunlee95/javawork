@@ -1,0 +1,15 @@
+package kr.or.iei.run;
+
+public class UserTest {
+
+	public static void main(String[] args) {
+		//객체 user1 생성
+		User user1 = new User();
+		
+		//값 입력
+		
+		//아이디: ... 출력
+		
+	}
+
+}

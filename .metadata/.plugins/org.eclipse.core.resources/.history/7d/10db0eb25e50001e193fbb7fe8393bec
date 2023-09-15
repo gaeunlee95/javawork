@@ -1,0 +1,15 @@
+package hiding.accounts;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		// Account 인스턴스 생성
+		Account account = new Account();
+		//멤버에 직접 접근하지 못하도록 권장
+		account.ano = "111-222-3333";
+
+		System.out.println(account.ano);
+
+	}
+
+}

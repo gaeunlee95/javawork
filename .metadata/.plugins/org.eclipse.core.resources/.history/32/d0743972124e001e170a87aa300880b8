@@ -1,0 +1,12 @@
+package arraycopy;
+
+public class ArrayCopyTest {
+
+	public static void main(String[] args) {
+		//배열의 복사
+		int[] arr1 = {10, 20 ,30 ,40};
+		int[] arr2 = new int[4];
+		
+	}
+
+}

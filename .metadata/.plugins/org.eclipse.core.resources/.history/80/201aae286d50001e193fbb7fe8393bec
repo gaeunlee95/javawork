@@ -1,0 +1,11 @@
+package reference.circle;
+
+public class CircleTest {
+
+	public static void main(String[] args) {
+		Circle c1 = new Circle(2, 3, 5);
+		c1.showCircleInfo();
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package kr.or.iei.run;
+
+import kr.or.iei.model.User;
+
+public class UserTest {
+
+	public static void main(String[] args) {
+		User user1 = new User();
+		
+		System.out.println(user1);
+		
+	}
+
+}

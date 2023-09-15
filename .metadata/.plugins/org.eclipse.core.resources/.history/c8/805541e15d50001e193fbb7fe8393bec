@@ -1,0 +1,15 @@
+package hiding.accounts;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		// Account 인스턴스 생성
+		Account account = new Account();
+		
+		account.ano = "111-222-3333";
+		
+		System.out.println(account.ano);
+
+	}
+
+}

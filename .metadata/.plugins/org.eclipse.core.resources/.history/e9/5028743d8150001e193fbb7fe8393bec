@@ -1,0 +1,15 @@
+package reference.subjects;
+
+public class StudentName {
+
+	public static void main(String[] args) {
+		Student std1 = new Student(101, "홍길동");
+		
+		//과목 추가
+		std1.koreanSubject("국어", 90);
+		
+		//학생 정조 출력
+		std1.showStudentInfo();
+	}
+
+}

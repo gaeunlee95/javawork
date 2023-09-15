@@ -1,0 +1,18 @@
+package methods;
+
+public class OneUpTest2 {
+	// 전역 공간(위쪽, global space)
+	
+	int x  = 1;
+	
+	public static void oneUp() {
+		x += 1;
+		return x;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

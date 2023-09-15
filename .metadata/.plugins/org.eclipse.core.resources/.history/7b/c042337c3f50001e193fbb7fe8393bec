@@ -1,0 +1,10 @@
+package classes;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		// Student 객체(변수) 생성
+		Student student1 = new Student();
+	}
+
+}

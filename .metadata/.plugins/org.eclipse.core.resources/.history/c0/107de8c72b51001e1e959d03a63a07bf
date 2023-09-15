@@ -1,0 +1,16 @@
+package statics;
+
+public class Student {
+	static int serialNum = 1000; //학번
+	int id;
+	String name;
+	
+	//생성자가 생성될 때마다 학번 증가
+	public Student() {
+		serialNum++;
+	}
+	public int getSerialNum() {
+		return serialNum;
+	}
+	
+}

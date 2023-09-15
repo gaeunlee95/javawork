@@ -1,0 +1,18 @@
+package methods;
+
+public class MathTest2 {
+
+	public static void main(String[] args) {
+		// 주사위 10번 던지기
+		
+		for(int i=1; i<=10; i++) {
+		int dice = (int)(Math.random()*6) + 1;
+		System.out.println(dice);
+		}
+
+		
+		
+		
+	}
+
+}

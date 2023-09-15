@@ -1,0 +1,11 @@
+package customers;
+
+//상속을 위해서 필드의 접근제어자 - protected
+//접근제어자가 생략된 필드는 default
+public class Customers {
+	protected int customerId; 		//고객 아이디
+	protected String customerName;  //고객 이름
+	protected String customerGrade; //고객 등급
+	int bonusPoint;	//default 생략
+		
+}

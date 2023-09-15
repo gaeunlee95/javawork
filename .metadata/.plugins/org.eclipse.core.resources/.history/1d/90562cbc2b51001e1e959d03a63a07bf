@@ -1,0 +1,16 @@
+package statics;
+
+public class Student {
+	static int serialNum = 1000; //학번
+	int id;
+	String name;
+	
+	//
+	public Student() {
+		serialNum++;
+	}
+	public int getSerialNum() {
+		return serialNum;
+	}
+	
+}

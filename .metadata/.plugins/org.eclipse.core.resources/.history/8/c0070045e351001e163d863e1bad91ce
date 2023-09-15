@@ -1,0 +1,18 @@
+package basicclass;
+
+public class EqualsTest {
+
+	public static void main(String[] args) {
+		String name1 = new String("우영우");
+		String name2 = new String("우영우");
+		
+		//인스턴스의 메모리 주소 비교
+		//해쉬 코드 - 메모리 주소(십진수)
+		System.out.println(System.identityHashCode(name1));
+		System.out.println(System.identityHashCode(name2));
+		System.out.println(name1);
+		System.out.println(name2);
+		System.out.println(name1 == name2); //false
+	}
+
+}

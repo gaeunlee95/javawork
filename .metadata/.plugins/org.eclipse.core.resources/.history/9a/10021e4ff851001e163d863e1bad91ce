@@ -1,0 +1,9 @@
+package customers;
+
+public class CustomerTest2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package inheritance.airplane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		SuperSonicAirPlane sa = new SuperSonicAirPlane();
+		
+		sa.이륙하다();
+		sa.비행하다();
+		sa.이륙하다();
+		
+		
+	}
+
+}

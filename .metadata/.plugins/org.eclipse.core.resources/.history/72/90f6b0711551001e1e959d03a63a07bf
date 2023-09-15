@@ -1,0 +1,12 @@
+package reference.subjects2;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		Student kim = new Student(101, "김대한");
+		
+		kim.addSubject("국어", 90);
+		kim.showStudentInfo();
+	}
+
+}

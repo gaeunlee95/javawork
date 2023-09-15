@@ -1,0 +1,6 @@
+package hiding.accounts;
+
+//은행 통장 계좌 자료형 생성
+public class Account {
+
+}

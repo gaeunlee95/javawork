@@ -1,0 +1,16 @@
+package classes.methods;
+
+public class UseCalculator {
+
+	public static void main(String[] args) {
+		// Calculator 객체 생성
+		Caculator calc = new Caculator();
+		int num1 = 10, int num2 = 11;
+		
+		int add = calc.add(num1, num2);
+		
+		System.out.println("두 수의 합: " + add);
+
+	}
+
+}
