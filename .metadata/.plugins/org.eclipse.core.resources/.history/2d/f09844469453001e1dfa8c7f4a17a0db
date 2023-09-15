@@ -1,0 +1,5 @@
+package singleton.students;
+
+public class School {
+
+}

@@ -1,0 +1,5 @@
+package singleton.car;
+
+public class Car {
+
+}

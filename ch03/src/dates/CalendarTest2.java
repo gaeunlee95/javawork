@@ -31,9 +31,15 @@ public class CalendarTest2 {
 		//초로 계산
 		long betweenTime = today.getTimeInMillis() - startDay.getTimeInMillis();
 		
-		//일로 계산
+		//일로 환산
 		betweenTime = betweenTime/(24*60*60*1000);
 		System.out.println(betweenTime + "일 지났습니다.");
+		
+		//현재까지의 시간(밀리초)
+		System.out.println(System.currentTimeMillis());
+		
+		//현재까지의 시간(나노초)
+		System.out.println(System.nanoTime());
 		
 	}
 
