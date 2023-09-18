@@ -17,7 +17,6 @@ public class Main {
 		Fruit fruit = null;
 		if(selectNo == 1) {
 			fruit = new Grape();
-			fruit.showFruitInfo();
 		}else if(selectNo == 2) {
 			fruit = new Banana();
 		}else if(selectNo == 3) {

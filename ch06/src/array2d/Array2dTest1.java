@@ -26,11 +26,12 @@ public class Array2dTest1 {
 		arr[1][1] = 5;
 		arr[1][2] = 6;
 		
-		//arr2 배열에 값을 저장
+		//arr2 배열에 값(요소)을 저장
 		//선언과 함께 초기화
 		int[][] arr2 = {
 			{1, 2, 3},
-			{4, 5, 6}
+			{4, 5, 6},
+			{7, 8}
 		};
 		
 		//특정한 요소를 인덱싱
@@ -51,9 +52,6 @@ public class Array2dTest1 {
 			}
 			System.out.println(); //줄바꿈
 		}
-		
-		
-		
 		
 	}
 

@@ -14,8 +14,10 @@
     <fullyQualifiedTypeName name="reference.subjects.Subjects"/>
     <fullyQualifiedTypeName name="inheritance.airplane.SuperSonicAirPlane"/>
     <fullyQualifiedTypeName name="protectedex.pack1.A"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.or.iei.model.User"/>
     <fullyQualifiedTypeName name="kr.or.iei.func.Exam"/>
     <fullyQualifiedTypeName name="kr.or.iei.model.vo.User"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

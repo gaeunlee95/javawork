@@ -33,20 +33,29 @@ public class AnimalTest {
 		animal.move();
 	}
 	
+	//static - new / static xx - 객체 직접 접근
+	
 	public static void main(String[] args) {
 		//AnimalTest 객체 생성
 		AnimalTest aTest = new AnimalTest();
 		
-		//Animal 타입으로 객체 생성
+		//Animal 타입으로 객체 생성(다형성)
 		Animal human = new Human();
 		Animal eagle = new Eagle();
 		Animal tiger = new Tiger();
+		
+//		//Animal 타입으로 객체 생성(다형성x)
+//		Human human = new Human();
+//		Eagle eagle = new Eagle();
+//		Tiger tiger = new Tiger();
 		
 		//moveAnimal() 호출
 		aTest.moveAnimal(human); //Animal animal = new Human
 		aTest.moveAnimal(eagle);
 		aTest.moveAnimal(tiger);
 		}
+	
+		//moveAnimal (human) // static 사용 시
 
 }
 

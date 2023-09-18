@@ -16,6 +16,7 @@ public class Array2dApt {
 		System.out.printf("2층 %d세대\n", household[1].length);
 		System.out.printf("1층 %d세대\n", household[0].length);
 		
+//		for(int i=0; i< household)
 		
 	}
 
