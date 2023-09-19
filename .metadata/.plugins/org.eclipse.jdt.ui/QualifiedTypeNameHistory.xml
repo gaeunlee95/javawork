@@ -20,4 +20,8 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="customers.GoldCustomer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="arraylist.shape.Triangle"/>
+    <fullyQualifiedTypeName name="arraylist.shape.Shape"/>
 </qualifiedTypeNameHistroy>

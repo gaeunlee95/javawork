@@ -41,10 +41,6 @@ public class CustomerArrayList {
 			System.out.printf("%s님이 지불할 비용은 %d원입니다.\n", 
 					customer.getCustomerName(), cost);
 		}
-		
-		
-		
-		
 	}
 
 }

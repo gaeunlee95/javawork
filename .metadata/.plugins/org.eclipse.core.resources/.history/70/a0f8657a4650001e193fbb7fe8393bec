@@ -1,6 +1,0 @@
-package classes.constructor;
-
-//참조 자료형 - Person 클래스 정의
-public class Person {
-
-}
