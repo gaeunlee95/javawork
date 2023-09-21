@@ -17,7 +17,7 @@ public class StringMethod {
 		//변수 주민번호에 값 삽입
 		String 주민번호 = "950815-2345678";
 		//성별 변수에 주민번호 상의 성별 구분 가능한 숫자 삽입
-		char 성별 = 주민번호.charAt(7);
+		char 성별 = 주민번호.charAt(0);
 		//switch문을 사용하여, 성별 출력
 		switch(성별) {
 		case '1': case '3':  

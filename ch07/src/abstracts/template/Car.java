@@ -4,10 +4,12 @@ public abstract class Car {
 	//추상메서드 drive(), stop() 생성
 	public abstract void drive();
 	public abstract void stop();
+	
 	//startCar() 메서드 생성
 	public void startCar() {
 		System.out.println("시동을 켭니다.");
 	}
+	
 	//turnOff() 메서드 생성
 	public void turnOff() {
 		System.out.println("시동을 끕니다.");

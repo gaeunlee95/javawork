@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class Student {
 	//변수(studentId, studentName)와 subjectList 어레이리스트 선언
-	private int studentId;
+	//private int studentId;
 	private String studentName;
 	private ArrayList<Subject> subjectList;	//ArrayList - Subject 객체를 저장할 배열(리스트)
 	
 	//매개변수 있는 생성자 선언 (객체를 저장한 어레이리스트 생성)
 	public Student(int studentId, String studentName) {
-		this.studentId = studentId;
+		//this.studentId = studentId;
 		this.studentName = studentName;
 		subjectList = new ArrayList<>();
 	}

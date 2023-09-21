@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="getInstan"/>
 		<list key="findhistory">
+			<item value="//get set 자동으로 생성"/>
 			<item value="getinstan"/>
 			<item value="get"/>
 			<item value="toString"/>
