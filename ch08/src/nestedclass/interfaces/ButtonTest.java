@@ -1,5 +1,7 @@
 package nestedclass.interfaces;
 
+import nestedclass.interfaces.Button.OnClickListener;
+
 public class ButtonTest {
 
 	public static void main(String[] args) {
@@ -17,7 +19,7 @@ public class ButtonTest {
 		button.setListener(new MessageListener());
 		button.touch();
 		
-		//사진찍기 구현 - 구현 클래스를 만들지 않고 익명 객체로 구현
+		//사진찍기 구현 - 구현 클래스를 따로 만들지 않고 익명 객체로 구현
 		button.setListener(new Button.OnClickListener() {
 			@Override
 			public void onClick() {
@@ -25,6 +27,17 @@ public class ButtonTest {
 			}
 		});
 		button.touch();
+		
+		//쇼핑 - 구매 구현(익명 객체)
+		button.setListener(new Button.OnClickListener() {
+			
+			@Override
+			public void onClick() {
+				System.out.println("상품을 구매합니다.");
+			}
+		});
+		button.touch();
+		
 		
 	}
 

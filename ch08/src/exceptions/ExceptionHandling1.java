@@ -13,7 +13,7 @@ public class ExceptionHandling1 {
 		//printLength("지하철");
 		printLength(null);
 		
-		System.out.println("[프로그램 종류\n");
+		System.out.println("[프로그램 종류]\n");
 		
 		
 		

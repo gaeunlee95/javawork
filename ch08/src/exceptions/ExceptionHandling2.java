@@ -11,7 +11,7 @@ public class ExceptionHandling2 {
 		}catch(NullPointerException e) {
 			//에러 처리 구문
 			System.out.println(e.getMessage());
-			e.printStackTrace();		//경로를 추적해서 에러를 출력
+			//e.printStackTrace();		//경로를 추적해서 에러를 출력
 		}
 		
 	}

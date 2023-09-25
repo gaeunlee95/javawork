@@ -7,6 +7,7 @@ class Out{
 	//클래스 이름을 사용하지 않은 익명(이름없는, Anonymous) 클래스
 	Runnable runner = new Runnable() {
 		int localNum = 20;
+		
 		@Override
 		public void run() {
 			System.out.println(outNum + "(외부클래스의 인스턴스 변수)");

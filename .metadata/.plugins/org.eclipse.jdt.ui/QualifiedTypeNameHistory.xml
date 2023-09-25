@@ -22,7 +22,6 @@
     <fullyQualifiedTypeName name="customers.GoldCustomer"/>
     <fullyQualifiedTypeName name="arraylist.shape.Triangle"/>
     <fullyQualifiedTypeName name="arraylist.shape.Shape"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="interfaceex.remocon.Television"/>
     <fullyQualifiedTypeName name="interfaceex.scheduler.Scheduler"/>
     <fullyQualifiedTypeName name="interfaceex.scheduler.PriorityAllocation"/>
@@ -41,5 +40,23 @@
     <fullyQualifiedTypeName name="nestedclass.A.C"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="nestedclass.interfaces.MessageListener"/>
+    <fullyQualifiedTypeName name="interfaceex.KumTire"/>
+    <fullyQualifiedTypeName name="nestedclass.student.Student.Score"/>
     <fullyQualifiedTypeName name="nestedclass.interfaces.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="funcinterface.lambdastring.StringContentImpl"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="streams.ArraysTest"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
 </qualifiedTypeNameHistroy>
