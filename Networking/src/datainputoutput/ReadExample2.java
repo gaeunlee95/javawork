@@ -19,6 +19,7 @@ public class ReadExample2 {
 				int num = is.read(data); //배열을 읽은 바이트 수
 				//System.out.println(num); //5 
 				
+				
 				if(num == -1) break; //데이터가 없으면
 				for(int i=0; i<num; i++) {
 					System.out.print(data[i] + " ");

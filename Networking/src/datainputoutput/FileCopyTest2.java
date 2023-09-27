@@ -11,8 +11,10 @@ public class FileCopyTest2 {
 
 	public static void main(String[] args) {
 		//close() 사용하지 않는 방법 : try ~ with ~ resource문
+		//바이트 단위로 읽어서 쓰기(복사) - 이미지
 		String originFile = "C:/File/panda-1.jpg";//원본 파일
 		String copyFile = "C:/File/panda-2.jpg";  //사본 파일
+		
 		try(InputStream is = new FileInputStream(originFile); 
 			OutputStream os = new FileOutputStream(copyFile)) {
 			

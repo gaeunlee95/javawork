@@ -2,7 +2,7 @@ package threads.beepprint;
 
 import java.awt.Toolkit; //접근 불가 에러 뜰 시, module 파일 삭제
 
-public class BeepPrintClass {
+public class BeepPrintTest {
 
 	public static void main(String[] args) {
 		//싱글 스레드 - 메인 스레드만 실행

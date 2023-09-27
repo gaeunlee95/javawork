@@ -17,16 +17,31 @@ public class FileCopyTest3 {
 		
 		try(InputStream is = new FileInputStream(originFile); 
 			OutputStream os = new FileOutputStream(copyFile)) {
-			start = System.currentTimeMillis();	//복사전 시간
+			
+			//복사전 시간
+			start = System.currentTimeMillis();	
+			
+			/*while(true) {
+				int data = is.read();  //읽은 데이터
+				if(data == -1) break;
+				os.write(data); //파일에 쓰기
+			}*/
+			
+			//복사 소요 시간 감속 //배열 사용
+			byte[] data = new byte[1024];
 			
 			while(true) {
-				int num = is.read();  //읽은 데이터
-				if(num == -1) break;
-				os.write(num); //파일에 쓰기
+				int readBytes =  is.read(data);  //데이터를 읽은 바이트 수
+				if(readBytes == -1) break;
+				for(int i=0; i<readBytes; i++) {
+					os.write(data[i]);
+				}
 			}
+			
 			os.flush();  //버퍼 비우기
 			
-			end = System.currentTimeMillis();  //복사후 시간
+			//복사후 시간
+			end = System.currentTimeMillis();  
 			System.out.println("복사 소요 시간 : " + (end-start) + "ms");
 		} catch (IOException e) {
 			e.printStackTrace();
