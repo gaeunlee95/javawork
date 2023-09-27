@@ -3,6 +3,7 @@ package banking.arraylist;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 import banking.array.Account;
 
@@ -17,9 +18,9 @@ public class BankArrayList {
 		
 		while(sw) {
 			try {
-				System.out.println("============================================");
-				System.out.println("1.계좌 생성 | 2.계좌 목록 | 3.예금 | 4.출금 | 5.종료");
-				System.out.println("============================================");
+				System.out.println("===================================================");
+				System.out.println("1.계좌 생성 | 2.계좌 목록 | 3.예금 | 4.출금 | 5.삭제 | 6.종료");
+				System.out.println("===================================================");
 				System.out.println("선택>");
 				
 				//메뉴 선택
@@ -36,6 +37,8 @@ public class BankArrayList {
 				}else if(selectNo == 4) {
 					withdraw();					//출금
 				}else if(selectNo == 5) {
+					removeAccount();			//종료
+				}else if(selectNo == 6) {
 					sw = false;					//종료
 				}else {
 					System.out.println("지원되지 않는 기능입니다. 다시 입력해 주세요.");
@@ -56,9 +59,19 @@ public class BankArrayList {
 		System.out.println("----------------------------------------");
 		
 		while(true) {
+			System.out.println("계좌 번호(형식-숫자만:00-00-000): ");
 			System.out.print("계좌 번호: ");
 			String ano = scanner.nextLine();
 			
+			//계좌번호 형식 검증
+			String regExp = "\\d{2}-\\d{2}-\\d{3}"; //형식 
+			boolean result = Pattern.matches(regExp, ano);
+			
+			if(result == false) {
+				System.out.println("게좌번호 형식이 아닙니다. 다시 입력해 주세요");
+				break;
+			}
+			if(result)	
 			//중복 계좌가 있는지 체킹 fm 쌤
 			if(findAccount(ano) != null) { //중복 계좌가 있으면
 				System.out.println("중복 계좌입니다. 다시 입력해 주세요");
@@ -148,6 +161,25 @@ public class BankArrayList {
 			}
 	}//withdraw 끝
 	
+	private static void removeAccount() {
+		System.out.println("----------------------------------------");
+		System.out.println("삭제");
+		System.out.println("----------------------------------------");
+		
+		while(true) {
+			System.out.print("계좌 번호: ");
+			String ano = scanner.nextLine();
+			
+			if(findAccount(ano) != null) {
+				Account account = findAccount(ano);
+				accountList.remove(account);
+				System.out.println("계좌가 삭제 되었습니다.");
+				break;
+			}else {
+				System.out.println("없는 계좌번호 입니다.");
+			}
+		}
+	}
 	
 	//계좌 검색
 	private static Account findAccount(String ano) {
