@@ -39,7 +39,7 @@ public class EchoServer {
 			@Override
 			public void run() {
 				try {
-					serverSocket = new ServerSocket(50001);
+					serverSocket = new ServerSocket(50001); //포트번호
 					System.out.println("[서버] 시작됨");
 					
 					while(true) {
@@ -51,13 +51,13 @@ public class EchoServer {
 						InetSocketAddress isa = 
 								(InetSocketAddress) socket.getRemoteSocketAddress();
 						String clientIp = isa.getHostString();
-						System.out.println("[서버] " + clientIp + "연결 요청을 수락함");
+						System.out.println("[서버] " + clientIp + " 연결 요청을 수락함");
 						//웹 브라우저에서 http://127.0.0.1:50001/ 을 입력함 - 콘솔에서 확인
 						
 						//클라이언트가 보낸 데이터 받기(읽기)
 						InputStream is = socket.getInputStream();
 						byte[] bytes = new byte[1024]; //데이터를 저장할 배열 선언
-						int readBytes = is.read(bytes);
+						int readBytes = is.read(bytes); //데이터를 읽은 바이트수
 						//데이터를 문자열로 생성 - 디코딩
 						String message = new String(bytes, 0, readBytes, "utf-8");
 						

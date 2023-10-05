@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Networking {
+module test2 {
 }

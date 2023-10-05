@@ -10,7 +10,7 @@ public class InetAddressTest {
 		try {
 			InetAddress local = InetAddress.getLocalHost(); //로컬 컴퓨터 IP 얻기
 			System.out.println("내 컴퓨터 IP 주소 " + local.getHostAddress());
-		
+			
 			//서버 컴퓨터 - 여러 대인 경우 배열로 출력
 			//DNS (Domain Name Service) : 숫자 주소 -> 문자이름 변경하는 서비스
 			//InetAddress server = InetAddress.getByName("www.naver.com");

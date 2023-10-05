@@ -6,6 +6,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
+//TCP(Transmission Control Protocol) 네트워킹
 public class ServerSample {
 	
 	//서버 소켓 객체 선언
@@ -40,7 +41,7 @@ public class ServerSample {
 					serverSocket = new ServerSocket(50001);
 					System.out.println("[서버] 시작됨");
 					
-					while(true) {
+					while(true) { //항상 대기
 						System.out.println("\n[서버] 연결 요청을 기다림\n");
 						//서버가 연결 요청 수락함
 						Socket socket = serverSocket.accept(); //클라이언트와 통신할 소켓 생성

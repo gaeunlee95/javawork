@@ -1,5 +1,7 @@
 package lotto;
 
+import java.util.Arrays;
+
 public class LottoTest {
 
 	public static void main(String[] args) {
@@ -26,10 +28,13 @@ public class LottoTest {
 			 * i=4 j=3
 			 */
 		}
+		System.out.println(Arrays.toString(lotto));
+		
 		
 		//6개 출럭
 		for(int i=0; i < lotto.length; i++ ) {
 			lotto[i] = (int)(Math.random()*45 + 1);
+			
 			System.out.print(lotto[i] + " ");
 		}
 		System.out.println();
@@ -40,17 +45,8 @@ public class LottoTest {
 	}*/
 		
 		//파일 이름 출력
-		LottoTest lottoTest = new LottoTest();
-		System.out.println(lottoTest);
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		//LottoTest lottoTest = new LottoTest();
+		//System.out.println(lottoTest);
 		
 	}
 

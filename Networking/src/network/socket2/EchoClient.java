@@ -18,7 +18,7 @@ public class EchoClient {
 			//데이터 보내기
 			String sendMessage = "오늘도 즐거운 하루 되세요~";
 			OutputStream os = socket.getOutputStream();
-			byte[] bytes = sendMessage.getBytes("utf-8"); //인코딩
+			byte[] bytes = sendMessage.getBytes("utf-8"); //utf 파일로 인코딩
 			os.write(bytes);
 			
 			os.flush();
@@ -28,6 +28,7 @@ public class EchoClient {
 			InputStream is = socket.getInputStream();
 			bytes = new byte[1024];
 			int readBytes = is.read(bytes);
+			//문자열로 복원(디코딩)
 			String receiveMessage = new String(bytes, 0, readBytes, "utf-8");
 			System.out.println("[클라이언트] 데이터를 받음: " + receiveMessage);
 			
@@ -38,8 +39,6 @@ public class EchoClient {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		
 		
 	}
 
