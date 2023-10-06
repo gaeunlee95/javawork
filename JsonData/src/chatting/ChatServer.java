@@ -89,7 +89,8 @@ public class ChatServer {
 		Collection<SocketClient> socketClient = chatRoom.values();
 		for(SocketClient sc : socketClient) {
 			//발신자와 동일하면 보내지 말고 다른 클라이언트에게 보냄
-			///if(sc == sender) continue;
+			//if(sc == sender) continue;
+				//sc.send(json);
 			if(sc != sender)
 			sc.send(json);  //문자열 보내기
 		}
