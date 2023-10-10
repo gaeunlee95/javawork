@@ -37,7 +37,7 @@ public class StrignMethod {
 			System.out.println("잘못된 주민번호 형식입니다.");
 		}
 		
-		
+		scanner.close();
 	}
 
 }

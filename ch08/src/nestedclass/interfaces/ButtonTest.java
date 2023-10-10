@@ -1,6 +1,5 @@
 package nestedclass.interfaces;
 
-import nestedclass.interfaces.Button.OnClickListener;
 
 public class ButtonTest {
 

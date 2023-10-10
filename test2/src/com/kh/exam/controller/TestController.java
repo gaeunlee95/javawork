@@ -42,6 +42,8 @@ public class TestController {
 	
 	System.out.println(Arrays.toString(personArr));
 	
+	sc.close();
+	
 	}
 
 }

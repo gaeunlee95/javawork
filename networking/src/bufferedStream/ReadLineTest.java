@@ -30,6 +30,8 @@ public class ReadLineTest {
 			int rnd = (int)(Math.random()*word.length);
 			System.out.println(word[rnd]);
 			
+			br.close();
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
