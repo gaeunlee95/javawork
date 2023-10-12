@@ -32,12 +32,11 @@ public class NewsClient {
 				String news = new String(receivePacket.getData(), 0,
 						receivePacket.getLength(), "utf-8");
 				System.out.println(news);
-			
-				if(news.contains("뉴스10")) break;
 				
+				//뉴스10이 포함된 문자열이 있으면.. contains() - String의 문자열 메서드
+				if(news.contains("뉴스10")) break;
 				//1초 간격으로 보내기
 				Thread.sleep(1000);
-				
 			}//while 끝(while문은 break를 사용해야 에러 없음)
 			datagramSocket.close();
 			System.out.println("[클라이언트] 통신 연결 끊음");
