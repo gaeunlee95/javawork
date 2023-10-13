@@ -1,6 +1,8 @@
 package banking.array;
 
 import java.util.Scanner;
+
+import banking.domain.Account;
 //gpt 및 네 버전
 public class BankMain {
 	//계좌를 저장할 배열의 크기 100개로 설정

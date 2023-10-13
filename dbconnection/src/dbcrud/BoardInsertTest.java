@@ -1,6 +1,6 @@
 package dbcrud;
 
-import java.sql.Blob;
+import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -26,19 +26,20 @@ public class BoardInsertTest {
 			//db 처리 작업
 			//매개변수화된 sql문 작성 - 동적 바인딩
 			String sql = "INSERT INTO boards (bno, btitle, bcontent, bwriter, bdate, bfilename, bfiledata) "
-					+ "VALUES (seq_bno.NEXTVAL,? ,? ,? ,SYSDATE ,? ,?)"; //인덱스 1~5
+					+ "VALUES (seq_bno.NEXTVAL,? ,? ,? , SYSDATE,? ,?)"; //인덱스 1~5
+						//다른 언어와 활용하기위해 문자열의 경우 홑따옴표(') 사용
 			pstmt = conn.prepareStatement(sql);
 			//? 값 지정
-			pstmt.setString(1, "notebook2");
-			pstmt.setString(2, "LG 그램 노트북2");
-			pstmt.setString(3, "sky123");
+			pstmt.setString(1, "notebook3");
+			pstmt.setString(2, "LG 그램 노트북3");
+			pstmt.setString(3, "cloud");
 			//사진 첨부한 경우
-			//pstmt.setString(4, "notebook.PNG"); //package에 사진 파일 넣기
-			//pstmt.setBlob(5, new FileInputStream("src/dbcrud/notebook.PNG"));
+			pstmt.setString(4, "phone.jpg"); //package에 사진 파일 넣기
+			pstmt.setBlob(5, new FileInputStream("src/dbcrud/phone.jpg"));
 			//사진 미첨부인 경우
-			pstmt.setString(4, null);
-			Blob blob = null;
-			pstmt.setBlob(5, blob);
+			//pstmt.setString(4, null);
+			//Blob blob = null;
+			//pstmt.setBlob(5, blob);
 			
 			//sql 실행 - executeUpdate()
 			int rows = pstmt.executeUpdate(); //insert, update, delete 할때 사용

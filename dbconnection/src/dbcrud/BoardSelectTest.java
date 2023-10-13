@@ -36,7 +36,7 @@ public class BoardSelectTest {
 			String sql = "SELECT * FROM boards WHERE bwriter = ? "
 					+ "ORDER BY bno DESC"; //인덱스 1~5
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, "sky123");
+			pstmt.setString(1, "cloud");
 			
 			ResultSet rs = pstmt.executeQuery();
 			List<Board> boardList = new ArrayList<>();
@@ -59,12 +59,14 @@ public class BoardSelectTest {
 							new FileOutputStream("c:/File/" + board.getBfileName());
 					
 					// 바이너리 파일 읽고 쓰기
-					byte[] data = new byte[1024];
+					/*byte[] data = new byte[1024];
 					while(true) {
 						int num = is.read(data);
 						if(num == -1) break;
 						os.write(data, 0, num);
-					}
+					}*/
+					is.transferTo(os);  //바이너리 파일 쓰기(저장) 메서드
+					
 					os.flush();
 					os.close();
 					is.close();
