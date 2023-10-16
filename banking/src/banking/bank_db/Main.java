@@ -27,15 +27,15 @@ public class Main {
 				if(selectNo == 1) {
 					dao.createAccount();      	//계좌 생성
 				}else if(selectNo == 2) {
-					dao.getAccountList();			//계좌 목록
+					dao.getAccountList();		//계좌 목록
 				}else if(selectNo == 3) {
 					dao.deposit();				//입금
 				}else if(selectNo == 4) {
 					dao.withdraw();				//출금
 				}else if(selectNo == 5) {
-					dao.removeAccount();			//종료
+					dao.removeAccount();		//종료
 				}else if(selectNo == 6) {
-					dao.selectAccount();			//계좌 검색
+					dao.selectAccount();		//계좌 검색
 				}else if(selectNo == 7) {
 					sw = false;					//종료
 				}else {

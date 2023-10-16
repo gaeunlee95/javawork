@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Account implements Serializable{
 	
-	private static final long seialBersionUID = 11111L;
+	private static final long serialVersionUID = 11111L;
 	
 	//필드
 	private String ano;
