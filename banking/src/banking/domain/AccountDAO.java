@@ -224,29 +224,47 @@ public class AccountDAO {
 			System.out.print("계좌 번호: ");
 			String ano = scanner.nextLine();
 			
+			
 			if(findAccount(ano) != null) {
-				try {
-					//db 처리작업
-					conn = JDBCUtil.getConnection(); //db 연결
-					String sql = "DELETE FROM account "
-							+ "WHERE ano = ? ";
-					pstmt = conn.prepareStatement(sql);
+				while(true) {
+					System.out.print("계좌 삭제를 원하면 'Y', 삭제를 진행하지 않으려면 'N' 을 입력해주세요.");
+					String word = scanner.nextLine();
 					
-					//값 지정
-					pstmt.setString(1, ano);
-					//sql 실행
-					pstmt.executeUpdate();
-					System.out.println("결과: 정상 처리되었습니다.");
-				} catch (SQLException e) {
-					e.printStackTrace();
-				} finally {
-					JDBCUtil.close(conn, pstmt);
-				}
+					if(word.toLowerCase().equals("y")) {	//홑따움표 사용안됨
+						
+						try {
+							//db 처리작업
+							conn = JDBCUtil.getConnection(); //db 연결
+							String sql = "DELETE FROM account "
+									+ "WHERE ano = ? ";
+							pstmt = conn.prepareStatement(sql);
+							
+							//값 지정
+							pstmt.setString(1, ano);
+							
+							//sql 실행
+							pstmt.executeUpdate();
+							System.out.println("결과: 정상 처리되었습니다.");
+						} catch (SQLException e) {
+							e.printStackTrace();
+						} finally {
+							JDBCUtil.close(conn, pstmt);
+						}
+						break;
+						
+					}if(word.toLowerCase().equals("n")) {
+						System.out.println("프로그램을 종료합니다.");
+						break;
+					}else
+						System.out.println("올바른 문자를 입력해주세요");
+				}//while2 끝
 				break;
 			}else {
 				System.out.println("없는 계좌번호 입니다.");
 			}
-		}// while 끝
+			
+			
+		}// while1 끝
 		
 	}
 	
@@ -261,6 +279,14 @@ public class AccountDAO {
 			String ano = scanner.nextLine();
 			
 			if(findAccount(ano) != null) {
+				/*Account account = findAccount(ano);
+				
+				System.out.println("1개의 계좌를 찾았습니다.");
+				System.out.print("계좌번호: " + account.getAno() + "\t");
+				System.out.print("계좌주: " + account.getOwner() + "\t");
+				System.out.print("잔고: " + account.getBalance() + "\n");
+				*/
+				
 				try {
 					//db 처리작업
 					conn = JDBCUtil.getConnection(); //db 연결
@@ -271,28 +297,29 @@ public class AccountDAO {
 					//값 지정
 					pstmt.setString(1, ano);
 					//sql 실행
+					
 					rs = pstmt.executeQuery();
 					if(rs.next()) {
 						ano = rs.getString("ano");
 						String owner = rs.getString("owner"); 
 						int balance = rs.getInt("balance");
+						
+						System.out.print("계좌번호: " + ano + "\t");
+						System.out.print("계좌주: " + owner + "\t");
+						System.out.print("잔고: " + balance + "\n");
 					}
+					
 				} catch (SQLException e) {
 					e.printStackTrace();
 				} finally {
 					JDBCUtil.close(conn, pstmt);
 				}
 				
-				System.out.print("계좌번호: " + ano + "\t");
-				System.out.print("계좌주: " + owner + "\t");
-				System.out.print("잔고: " + balance + "\n");
-				
 				break;
 			}else {
-				System.out.println("없는 계좌번호 입니다.");
+				System.out.println("없는 계좌번호 입니다. 다시 입력해 주세요.");
 			}
 		}
-		
 	}
 	
 	//계좌 검색
