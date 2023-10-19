@@ -252,10 +252,20 @@ public class BoardExample2 {
 		String menuNo = scanner.nextLine();
 		if(menuNo.equals("1")) {
 			//db 작업 - TRUNCATE
-			String sql = "TRUNCATE TABLE board";
+			
 			try {
+				String sql = "TRUNCATE TABLE board";
 				pstmt = conn.prepareStatement(sql);
 				//sql 실행
+				pstmt.executeUpdate();
+				
+				//글번호가 삭제후에 이어진 번호 출력되는 문제 발생(1부터 초기화)
+				sql = "DROP SEQUENCE seq";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.executeUpdate();
+				
+				sql = "CREATE SEQUENCE seq NOCACHE";
+				pstmt = conn.prepareStatement(sql);
 				pstmt.executeUpdate();
 				
 				pstmt.close();
